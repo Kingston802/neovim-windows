@@ -1,0 +1,16 @@
+{
+    "languageserver": {
+    "bash": {
+      "command": "bash-language-server",
+      "args": ["start"],
+      "filetypes": ["sh"],
+      "ignoredRootPaths": ["~"]
+      }
+    },
+    "snippets.ultisnips.pythonPrompt": false
+
+    // python config
+    // "python.linting.enabled": true,
+    // "python.linting.pylintEnabled": true
+}
+
