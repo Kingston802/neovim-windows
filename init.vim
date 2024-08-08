@@ -40,3 +40,14 @@ set expandtab
 set autoindent
 set tabstop=2 
 set shiftwidth=2
+
+" set shell for ! and floatterm to git bash on windows 
+ if has("win32")
+ let &shell='bash.exe'
+ let &shellcmdflag = '-c'
+ let &shellredir = '>%s 2>&1'
+ set shellquote= shellxescape=
+ " set noshelltemp
+ set shellxquote=
+ let &shellpipe='2>&1| tee'
+endif
