@@ -2,17 +2,18 @@
 source $HOME/AppData/Local/nvim/plugins.vim 
 
 " source config files
-source $HOME/AppData/Local/nvim/plugin-config/coc.vim 
 source $HOME/AppData/Local/nvim/plugin-config/nerdtree.vim 
 source $HOME/AppData/Local/nvim/plugin-config/floaterm.vim 
 source $HOME/AppData/Local/nvim/plugin-config/vimtex.vim 
+source $HOME/AppData/Local/nvim/plugin-config/lsp.lua
+source $HOME/AppData/Local/nvim/plugin-config/lualine.lua
 
 " source keybindings
 source $HOME/AppData/Local/nvim/keys.vim 
 
 " some basics
-color gruvbox
-let g:airline_theme='gruvbox'
+lua vim.g.gruvbox_baby_background_color = dark
+colorscheme gruvbox-baby
 set number relativenumber
 filetype plugin on
 filetype indent on 
@@ -27,6 +28,7 @@ set fillchars=""
 set encoding=utf8
 set clipboard=unnamedplus " copypaste between vim and everything else
 set showtabline=0 " never show tabline
+
 
 " Disables automatic commenting on newline
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
