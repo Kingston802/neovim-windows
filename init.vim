@@ -5,15 +5,14 @@ source $HOME/AppData/Local/nvim/plugins.vim
 source $HOME/AppData/Local/nvim/plugin-config/nerdtree.vim 
 source $HOME/AppData/Local/nvim/plugin-config/floaterm.vim 
 source $HOME/AppData/Local/nvim/plugin-config/vimtex.vim 
-source $HOME/AppData/Local/nvim/plugin-config/lsp.lua
-source $HOME/AppData/Local/nvim/plugin-config/lualine.lua
+" source $HOME/AppData/Local/nvim/plugin-config/lsp.lua
+" source $HOME/AppData/Local/nvim/plugin-config/lualine.lua
 
 " source keybindings
 source $HOME/AppData/Local/nvim/keys.vim 
 
 " some basics
-lua vim.g.gruvbox_baby_background_color = dark
-colorscheme gruvbox-baby
+colorscheme gruvbox
 set number relativenumber
 filetype plugin on
 filetype indent on 

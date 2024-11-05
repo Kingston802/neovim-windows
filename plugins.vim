@@ -30,4 +30,5 @@ Plug 'nvim-tree/nvim-web-devicons'
 
 " colour scheme 
 Plug 'luisiacc/gruvbox-baby', {'branch': 'main'}
+Plug 'morhetz/gruvbox'
 call plug#end()

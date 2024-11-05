@@ -70,7 +70,7 @@ cmp.setup.cmdline(':', {
 
 -- Set up lspconfig.
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
-require('lspconfig')['basedpyright'].setup {
+require('lspconfig').pylyzer.setup {
   capabilities = capabilities
 }
 
